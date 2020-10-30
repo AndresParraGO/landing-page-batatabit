@@ -71,13 +71,13 @@ html {
 
 
 .header__title-content {
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   margin-bottom: 2rem;
   color: var(--just-white);
 }
 
 .header__paragraph-content {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: var(--off-white);
 }
 
@@ -89,7 +89,7 @@ html {
   background-color: var(--just-white);
   box-shadow: 0 5px 8px 0 rgba(89,73,30,.16);
   color: var(--black);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
@@ -155,7 +155,7 @@ main {
   color: var(--black);
 }
 .main__exchange-paragraph {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6rem;
   color: #757575;
   font-weight: 500;
@@ -259,4 +259,95 @@ main {
 
 .main__table-time span {
   font-weight: bold;
+}
+
+
+/* Section Details */
+
+.main__product-detail {
+  background-color: var(--black);
+  padding: 6rem 0;
+  color: var(--just-white);
+
+  position: relative;
+}
+
+.main__product-detail-icon {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fbatata.svg?alt=media&token=85d62faa-3a93-4f5f-bd3d-a8ad53ff2684);
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+}
+
+.main__product-info {
+  text-align: center;
+  margin-bottom: 4rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.product-cards__container {
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main__product-info h3 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.main__product-info p {
+  font-size: 1.6rem;
+  color:#999;
+  margin-bottom: 2rem;
+}
+
+.product-details__card {
+  background-color: var(--warm-black);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.product-details__card-icon {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.icon-clock {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fclock.svg?alt=media&token=fb7c1abc-f4ec-46f6-8ed1-ed57f6814eed);
+}
+
+.icon-eye {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Feye.svg?alt=media&token=b7c744b0-e68e-42ba-bac2-764cea0fc145);
+}
+
+.icon-money {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fdollar-sign.svg?alt=media&token=6c4af44f-affa-4283-ae87-a3a0e360b499);
+}
+
+.icon-check {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fcheck-circle.svg?alt=media&token=e15c18bf-3a2f-4125-b89b-91ed6c9ccb8f);
+}
+
+.product__card-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.product__card-text {
+  font-size: 1.8rem;
+  color:#999;
 }
