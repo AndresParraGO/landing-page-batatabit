@@ -27,3 +27,99 @@ html {
   font-family: "DM Sans", Arial, Helvetica, sans-serif;
 }
 
+/* Header */
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(207deg, #201e1c 15%, #f7931a 100%);
+
+  text-align: center;
+}
+
+@keyframes scaleLogo {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+
+.header__logo {
+  display: block;
+  margin-bottom: 3rem;
+
+  width: 200px;
+
+  align-self: center;
+  animation: scaleLogo 500ms infinite alternate;
+}
+
+
+.header__text-content {
+  max-width: 900px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.header__title-content {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: var(--just-white);
+}
+
+.header__paragraph-content {
+  font-size: 1.4rem;
+  color: var(--off-white);
+}
+
+.header__btn {
+  width: 200px;
+  height: 35px;
+  display: block;
+
+  background-color: var(--just-white);
+  box-shadow: 0 5px 8px 0 rgba(89,73,30,.16);
+  color: var(--black);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+
+  line-height: 35px;
+  text-decoration: none;
+}
+
+@keyframes rotateButton {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  40% { transform: translateX(-50%) rotate(3deg); }
+  60% { transform: translateX(-50%) rotate(-3deg); }
+  100% { transform: translateX(-50%) rotate(0deg); }
+}
+
+.header__btn:hover {
+  animation: rotateButton .5s;
+}
+
+
+.header__btn span {
+  margin-left: .5em;
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fdown-arrow.svg?alt=media&token=6667cf32-9be4-403b-acd3-665bdebea9d0);
+  background-repeat: no-repeat;
+}
