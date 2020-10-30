@@ -123,3 +123,39 @@ html {
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fdown-arrow.svg?alt=media&token=6667cf32-9be4-403b-acd3-665bdebea9d0);
   background-repeat: no-repeat;
 }
+
+
+/* Main */
+
+main {
+  width: 100%;
+  background-color: var(--off-white);
+}
+
+.main__exchange-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  padding-top: 7rem;
+}
+
+.main__exchange-img {
+  margin-bottom: 2rem;
+}
+
+.main__exchange-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.main__exchange-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #757575;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
