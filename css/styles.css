@@ -266,7 +266,7 @@ main {
 
 .main__product-detail {
   background-color: var(--black);
-  padding: 6rem 0;
+  padding: 5rem 0;
   color: var(--just-white);
 
   position: relative;
@@ -312,6 +312,7 @@ main {
 }
 
 .product-details__card {
+  min-height: 188px;
   background-color: var(--warm-black);
   padding: 2rem;
   margin-bottom: 2rem;
@@ -350,4 +351,182 @@ main {
 .product__card-text {
   font-size: 1.8rem;
   color:#999;
+}
+
+/* Bitcoin Hero */
+
+.bitcoin__img {
+  width: 100%;
+  min-height: 300px;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Fbitcoinbaby2x.jpg?alt=media&token=be4ccccd-6a8e-4ee3-bbee-1184e07c659d);
+  background-size: cover;
+  background-position: center;
+}
+
+.bitconin__img-title {
+  font-size: 2.5rem;
+  color: var(--just-white);
+  padding-top: 6rem;
+  text-align: center;
+}
+
+
+/* Section Plans */
+
+/* Slider */
+.main__plans--slider {
+  padding: 1em 0;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.main__plans {
+  padding: 4rem 0;
+  background-color: var(--of-white);
+}
+
+.main__plans-info {
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.main__plans-title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.main__plans-paragraph {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+/* Card Plane */
+.plans-cards__card {
+  scroll-snap-align: center;
+
+  position: relative;
+  width: 70%;
+  min-width: 190px;
+  width: 300px;
+  margin: 0 10px;
+
+  box-shadow: 0 5px 8px 0 rgba(89,73,30,.16);
+  border-radius: 10px;
+  text-align: center;
+  padding: 3.5rem 1rem;
+}
+
+.plans-cards__card-type {
+  width:120px;
+  padding: .8em 1em;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  color: var(--just-white);
+  font-weight: bold;
+  border-radius: .5rem;
+
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Card Plan Recommended */
+.plan-recommended {
+  background-color: var(--just-white);
+}
+.plan-recommended .plans-cards__card-type {
+  background-color: var(--bitcoin-orange);
+}
+
+/* Card Plan Basic */
+.plan-basic {
+  background-color: var(--secondary-blue);
+  color: var(--just-white);
+}
+.plan-basic .plans-cards__card-type {
+  background-color: var(--warm-black);
+}
+.plan-basic .plans-cards__card-text {
+  color: #eee;
+}
+.plan-basic .plans-cards__card-btn {
+  background-color: var(--warm-black);
+  color: inherit;
+}
+
+/* Card Plan Unlimeted */
+.plan-unlimited {
+  background-color: var(--black);
+  color: var(--just-white);
+}
+.plan-unlimited .plans-cards__card-type {
+  background-color: var(--grey);
+}
+.plan-unlimited .plans-cards__card-btn {
+  background-color: var(--warm-black);
+  color: inherit;
+}
+
+
+.plans-cards__card-shape {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.plans-cards__card-price {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+.plans-cards__card-price::after {
+  content: "$";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  font-size: 1rem;
+}
+
+.plans-cards__card-text {
+  color: #777;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+
+.plans-cards__card-btn {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  width: 80%;
+  border: 2px solid var(--bitcoin-orange);
+  font-weight: bold;
+  background-color: #F8F8F6;
+  padding:1em .5em;
+  border-radius: 5px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans-cards__card-btn::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: .5em;
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Forange-right-arrow.svg?alt=media&token=90eada9f-db86-4dae-b040-b5119c17ac54);
+  background-size: cover;
 }
