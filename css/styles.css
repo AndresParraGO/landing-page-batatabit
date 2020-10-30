@@ -165,10 +165,20 @@ main {
 /* Table Exchange */
 
 .main__table-container {
-  width: 80%;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 900px;
+
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.main__table-container article {
+  scroll-snap-align: center;
+  margin: 0 1rem;
+  width: 100%;
+  min-width: 260px;
 }
 
 .main__table-title {
@@ -193,6 +203,7 @@ main {
   border-radius: 5px;
   margin-bottom: 1rem;
 }
+
 
 .main__table-grid-money {
   color: #777;
@@ -312,10 +323,13 @@ main {
 }
 
 .product-details__card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 400px;
   min-height: 188px;
   background-color: var(--warm-black);
   padding: 2rem;
-  margin-bottom: 2rem;
   border-radius: 10px;
 }
 
@@ -529,4 +543,33 @@ main {
   margin-left: .5em;
   background-image: url(https://firebasestorage.googleapis.com/v0/b/my-assets-3fd08.appspot.com/o/mobile-first-project%2Forange-right-arrow.svg?alt=media&token=90eada9f-db86-4dae-b040-b5119c17ac54);
   background-size: cover;
+}
+
+
+/* Footer */
+.footer {
+  padding: 2rem;
+  background-color: var(--bitcoin-orange);
+
+  display: flex;
+}
+
+.footer section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+.footer-left li {
+  margin: 1rem 0;
+}
+.footer-left a {
+  text-decoration: none;
+  color: var(--just-white);
 }

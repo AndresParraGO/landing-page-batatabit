@@ -1,0 +1,20 @@
+
+/* Header */
+.header {
+  height: 400px;
+}
+
+
+.product-cards__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+/* Section Plans */
+
+/* Slider */
+.main__plans--slider {
+  justify-content: center;
+}
